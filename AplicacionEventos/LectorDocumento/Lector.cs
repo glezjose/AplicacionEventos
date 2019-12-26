@@ -6,6 +6,9 @@ namespace AplicacionEventos.LectorDocumento
 {
     public class Lector
     {
+        /// <summary>
+        /// Es el método el cual se utiliza para leer el archivo txt.
+        /// </summary>
         public void LeerArchivo()
         {
             Fecha _oFecha = new Fecha();
