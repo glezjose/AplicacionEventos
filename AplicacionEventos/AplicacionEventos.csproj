@@ -43,16 +43,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LectorDocumento\Lector.cs" />
-    <Compile Include="Logica\Fecha.cs" />
+    <Compile Include="Events\Event.cs" />
+    <Compile Include="Events\IEvent.cs" />
+    <Compile Include="Handling\Day.cs" />
+    <Compile Include="Handling\Handler.cs" />
+    <Compile Include="Handling\Hour.cs" />
+    <Compile Include="Handling\IHandler.cs" />
+    <Compile Include="Handling\ITime.cs" />
+    <Compile Include="Handling\Minute.cs" />
+    <Compile Include="Handling\Month.cs" />
+    <Compile Include="Handling\Time.cs" />
+    <Compile Include="Processing\IProcessor.cs" />
+    <Compile Include="Processing\Processor.cs" />
+    <Compile Include="Reading\IReader.cs" />
+    <Compile Include="Reading\Reader.cs" />
+    <Compile Include="Events\Fecha.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Writing\IWriter.cs" />
+    <Compile Include="Writing\Writer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Archivo\file.txt" />
+    <Content Include="File\file.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
